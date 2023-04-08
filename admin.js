@@ -6,7 +6,11 @@ export default class Admin extends User {
         //super classe é classe ques esta fornecendo os parâmetros para outra classe herdar.
         super(nome, email, nascimento, rp, ativo )
     }
-   
+    
+    //assinatura seria os parametros que um método recebe
+    exibirInfos(){
+        return`${this.nome}, ${this.email}, ${this.nascimento}`
+       }
 
     criarCurso(nomeDoCurso, vagas){
         return`Curso de ${nomeDoCurso}  com ${vagas}`

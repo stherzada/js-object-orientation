@@ -64,7 +64,7 @@ export default class User {
    // }
 
    exibirInfos(){
-    return`${this.nome}, ${this.email}, ${this.nascimento}`
+    return`${this.nome}, ${this.email}, ${this.nascimento},${this.rp}, ${this.ativo},  `
    }
 };
 
