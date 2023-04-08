@@ -11,18 +11,34 @@ export default class User {
     this.#rp = rp || 'estudante'
     this.#ativo = ativo
    }
+   //pegar informação
+   get nome(){
+      return this.#nome
+   }
+   get email(){
+      return this.#email
+   }
+   get nascimento(){
+      return this.#nascimento
+   }
+   get rp(){
+      return this.#rp
+   }
+   get ativo(){
+      return this.#ativo
+   }
 
 
    // esse objeto que é feito para acessar as propiedades privadas de uma classe
-   #montaObjUser(){
-      return({
-         nome: this.#nome,
-         email: this.#email,
-         nascimento: this.#nascimento,
-         rp: this.#rp,
-         ativo: this.#ativo
-      })
-   }
+   // #montaObjUser(){
+   //    return({
+   //       nome: this.#nome,
+   //       email: this.#email,
+   //       nascimento: this.#nascimento,
+   //       rp: this.#rp,
+   //       ativo: this.#ativo
+   //    })
+   // }
 
    exibirInfos(){
    const objUser = this.#montaObjUser()
