@@ -6,6 +6,9 @@ export default class Admin extends User {
         //super classe é classe ques esta fornecendo os parâmetros para outra classe herdar.
         super(nome, email, nascimento, rp, ativo )
     }
+    nomeAdmin(){
+        return `${this.nome}`
+    }
 
     criarCurso(nomeDoCurso, vagas){
         return`Curso de ${nomeDoCurso}  com ${vagas}`

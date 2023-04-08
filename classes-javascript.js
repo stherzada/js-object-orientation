@@ -12,8 +12,22 @@ export default class User {
     this.#ativo = ativo
    }
 
+
+   // esse objeto que é feito para acessar as propiedades privadas de uma classe
+   #montaObjUser(){
+      return({
+         nome: this.#nome,
+         email: this.#email,
+         nascimento: this.#nascimento,
+         rp: this.#rp,
+         ativo: this.#ativo
+      })
+   }
+
    exibirInfos(){
-    return`${this.#nome}, ${this.email}, ${this.nascimento}`
+   const objUser = this.#montaObjUser()
+
+    return`${objUser.nome}, ${objUser.email}, ${objUser.nascimento}`
    }
 };
 
