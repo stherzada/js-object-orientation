@@ -8,6 +8,8 @@ import Admin from "./admin.js"
 // console.log(novoUser.exibirInfos())
 
 const novoAdmin = new Admin ('Guilherme', 'o@o.com', '2002-02-02')
-console.log(novoAdmin.exibirInfos())
+
+console.log(novoAdmin.nome) //acessar o get
+novoAdmin.nome = ''
 
 console.log(novoAdmin.nome)

@@ -13,6 +13,6 @@ export default class Docente extends User {
 
 const novoDocente = new Docente('Sther', 'o@o.com', '2020-03-01')
 
-console.log(novoDocente)
-console.log(novoDocente.exibirInfos())
-console.log(novoDocente.aprovaEstudante('Sther', 'Psicologia'))
+// console.log(novoDocente)
+// console.log(novoDocente.exibirInfos())
+// console.log(novoDocente.aprovaEstudante('Sther', 'Psicologia'))

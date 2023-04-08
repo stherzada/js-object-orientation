@@ -28,6 +28,29 @@ export default class User {
       return this.#ativo
    }
 
+   set nome(novoNome){
+      if(novoNome === ''){
+         throw new Error ('Formato inválido')
+      }
+      this.#nome = novoNome
+   }
+   set email(novoEmail){
+      this.#email = novoEmail
+   }
+
+   set nascimento(novoNascimento){
+      this.#nascimento = novoNascimento
+   }
+
+   set rp(novoRP){
+      this.#rp = novoRP
+   }
+
+   set ativo(novoAtivo){
+      this.#ativo = novoAtivo
+   }
+
+
 
    // esse objeto que é feito para acessar as propiedades privadas de uma classe
    // #montaObjUser(){
@@ -41,9 +64,7 @@ export default class User {
    // }
 
    exibirInfos(){
-   const objUser = this.#montaObjUser()
-
-    return`${objUser.nome}, ${objUser.email}, ${objUser.nascimento}`
+    return`${this.nome}, ${this.email}, ${this.nascimento}`
    }
 };
 

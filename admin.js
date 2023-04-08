@@ -15,4 +15,4 @@ export default class Admin extends User {
 
 const novoAdmin = new Admin ('Lucas', 'l@l.com', '2020-03-03');
 
-console.log(novoAdmin.criarCurso('Psicologia', '30 vagas'))
+// console.log(novoAdmin.criarCurso('Psicologia', '30 vagas'))
