@@ -1,14 +1,19 @@
 export default class User {
+   #nome
+   #email
+   #nascimento
+   #rp
+   #ativo
    constructor(nome, email, nascimento, rp, ativo = true){
-    this.nome = nome
-    this.email = email
-    this.nascimento = nascimento
-    this.rp = rp || 'estudante'
-    this.ativo = ativo
+    this.#nome = nome
+    this.#email = email
+    this.#nascimento = nascimento
+    this.#rp = rp || 'estudante'
+    this.#ativo = ativo
    }
 
    exibirInfos(){
-    return`${this.nome}, ${this.email}, ${this.nascimento}`
+    return`${this.#nome}, ${this.email}, ${this.nascimento}`
    }
 };
 

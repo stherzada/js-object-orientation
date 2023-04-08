@@ -1,7 +1,7 @@
 import User from "./classes-javascript.js";
 
 
-class Admin extends User {
+export default class Admin extends User {
     constructor(nome, email, nascimento, rp = 'admin', ativo = true){
         //super classe é classe ques esta fornecendo os parâmetros para outra classe herdar.
         super(nome, email, nascimento, rp, ativo )
